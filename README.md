@@ -19,11 +19,11 @@ valentino-magic-beans-project/
 ├── README.md
 ├── tests/
 │   ├── auth-flow.spec.ts       # Authentification flow
-│   ├── product-flow.spec.ts        # The flow of adding product to cart, proceed to checkout and place order.
-│   └── otherTests.test.ts   # Future test cases
+│   ├── product-flow.spec.ts    # The flow of adding product to cart, proceed to checkout and place order.
+│   └── otherTests.test.ts      # Future test cases
 │
 ├── utils/
-│   └── EmailUtils.ts        # Class for handling email operations with MailSlurp API
+│   └── EmailUtils.ts    # Class for handling email operations with MailSlurp API
 │
 ├── pages/
 │   ├── Cart.ts          # Typescript file for asserting a product and geting the subtotal of a product.
@@ -33,7 +33,7 @@ valentino-magic-beans-project/
 │   ├── Products.ts      # Adding product to cart.
 │   └── Signup.ts        # Contains data for singup and confirmation code.
 └── basic/
-    └── Cart.spec.ts         # Test for adding product to cart.
+    └── Cart.spec.ts     # Test for adding product to cart.
 
 ## ⚙️ Technologies Used
 
