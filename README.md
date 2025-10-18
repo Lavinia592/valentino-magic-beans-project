@@ -1,38 +1,33 @@
-# valentino-magic-beans-project
-## E2E Testing Project (TypeScript)
-This project is an end-to-end (E2E) testing suite built with TypeScript.
-It includes automated test cases for key user flows such as signup, login, and navigation, and uses MailSlurp for testing email-based scenarios (e.g., account verification).
+# 🧪 Valentino Magic Beans Project
 
-TESTS/
+This repository contains an **end-to-end (E2E) testing suite** built with **Playwright** and **TypeScript**.  
+The project automates key user flows such as **signup, login, and navigation** for the Valentino Magic Beans web application.
+
+It also integrates **MailSlurp** to manage temporary email inboxes for signup verification testing.
+
+---
+
+## 📁 Project Structure
+
+valentino-magic-beans-project/
 │
+├── package.json
+├── tsconfig.json
+├── playwright.config.ts
+├── README.md
+│
+└── TESTS/
 ├── tests/
-│   ├── auth-flow.spec.ts       # Authentification flow
-│   ├── product-flow.spec.ts        # The flow of adding product to cart, proceed to checkout and place order.
-│   └── otherTests.test.ts   # Future test cases
+│ ├── signup.test.ts # Tests signup flow with email verification
+│ ├── login.test.ts # Tests login functionality
+│ └── otherTests.test.ts # Future test cases
 │
 ├── utils/
-│   └── EmailUtils.ts        # Class for handling email operations with MailSlurp API
+│ └── EmailUtils.ts # Class for MailSlurp email operations
 │
-├── pages/
-│   ├── Cart.ts          # Typescript file for asserting a product and geting the subtotal of a product.
-│   ├── Checkout.ts      # Contains used data for filling a form.
-│   ├── Contact.ts       # Typescript file for filling the name and the order id.
-│   ├── Login.ts         # Login flow.
-│   ├── Products.ts      # Adding product to cart.
-│   └── Signup.ts        # Contains data for singup and confirmation code.
-└── basic/
-    └── Cart.spec.ts         # Test for adding product to cart.
-
-## Technologies Used
-
-TypeScript
-
-Playwright
-
-MailSlurp API (for email verification in signup tests)
-
-Node.js
-
-npm (for dependency management)
-
-
+├── data/
+│ ├── userData.ts # Contains test data (email, username, password)
+│ └── config.ts # Environment configs and URLs
+│
+└── fixtures/
+└── example.json # Optional mock data or static files
