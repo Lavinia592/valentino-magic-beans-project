@@ -19,7 +19,7 @@ valentino-magic-beans-project/
 ├── README.md
 ├── tests/
 │   ├── auth-flow.spec.ts       # Authentification flow
-│   ├── product-flow.spec.ts    # The flow of adding product to cart, proceed to checkout and place order.
+│   ├── product-flow.spec.ts    # The product flow - adding product to cart, proceed to checkout and place order.
 │   └── otherTests.test.ts      # Future test cases
 │
 ├── utils/
