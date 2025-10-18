@@ -5,7 +5,8 @@ The project automates key user flows such as **signup, login, and navigation** f
 
 It also integrates **MailSlurp** to manage temporary email inboxes for signup verification testing.
 
----
+$tree
+```bash
 
 ## 📁 Project Structure
 
@@ -31,3 +32,4 @@ valentino-magic-beans-project/
 │
 └── fixtures/
 └── example.json # Optional mock data or static files
+```
