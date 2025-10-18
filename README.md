@@ -35,6 +35,13 @@ valentino-magic-beans-project/
 └── basic/
     └── Cart.spec.ts         # Test for adding product to cart.
 
+## ⚙️ Technologies Used
+
+- **Playwright** – Browser automation and testing  
+- **TypeScript** – Type-safe JavaScript  
+- **MailSlurp API** – Temporary email inbox for testing signups  
+- **Node.js** – Runtime environment  
+- **npm** – Dependency management  
 
 
 ```
