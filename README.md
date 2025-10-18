@@ -13,9 +13,9 @@ $tree
 valentino-magic-beans-project/
 │
 ├── package.json
-├── tsconfig.json
+├── package-lock.json
 ├── playwright.config.ts
-├── node_modules
+├── node_modules/
 ├── README.md
 ├── tests/
 │   ├── auth-flow.spec.ts       # Authentification flow
