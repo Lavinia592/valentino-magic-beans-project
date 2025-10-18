@@ -15,21 +15,26 @@ valentino-magic-beans-project/
 ├── package.json
 ├── tsconfig.json
 ├── playwright.config.ts
+├── node_modules
 ├── README.md
-│
-└── TESTS/
 ├── tests/
-│ ├── signup.test.ts # Tests signup flow with email verification
-│ ├── login.test.ts # Tests login functionality
-│ └── otherTests.test.ts # Future test cases
+│   ├── auth-flow.spec.ts       # Authentification flow
+│   ├── product-flow.spec.ts        # The flow of adding product to cart, proceed to checkout and place order.
+│   └── otherTests.test.ts   # Future test cases
 │
 ├── utils/
-│ └── EmailUtils.ts # Class for MailSlurp email operations
+│   └── EmailUtils.ts        # Class for handling email operations with MailSlurp API
 │
-├── data/
-│ ├── userData.ts # Contains test data (email, username, password)
-│ └── config.ts # Environment configs and URLs
-│
-└── fixtures/
-└── example.json # Optional mock data or static files
+├── pages/
+│   ├── Cart.ts          # Typescript file for asserting a product and geting the subtotal of a product.
+│   ├── Checkout.ts      # Contains used data for filling a form.
+│   ├── Contact.ts       # Typescript file for filling the name and the order id.
+│   ├── Login.ts         # Login flow.
+│   ├── Products.ts      # Adding product to cart.
+│   └── Signup.ts        # Contains data for singup and confirmation code.
+└── basic/
+    └── Cart.spec.ts         # Test for adding product to cart.
+
+
+
 ```
