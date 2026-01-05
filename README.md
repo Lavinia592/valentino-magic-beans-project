@@ -34,6 +34,7 @@ valentino-magic-beans-project/
 │   └── Signup.ts        # Contains data for singup and confirmation code.
 └── basic/
     └── Cart.spec.ts     # Test for adding product to cart.
+```
 
 ## ⚙️ Technologies Used
 
@@ -44,4 +45,4 @@ valentino-magic-beans-project/
 - **npm** – Dependency management  
 
 
-```
+
