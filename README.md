@@ -18,22 +18,25 @@ valentino-magic-beans-project/
 ├── node_modules/
 ├── README.md
 ├── tests/
-│   ├── auth-flow.spec.ts       # Authentification flow
-│   └── product-flow.spec.ts    # The product flow - adding product to cart, proceed to checkout and place order.
-│
-│
-├── utils/
-│   └── EmailUtils.ts    # Class for handling email operations with MailSlurp API
-│
-├── pages/
-│   ├── Cart.ts          # Typescript file for asserting a product and geting the subtotal of a product.
-│   ├── Checkout.ts      # Contains used data for filling a form.
-│   ├── Contact.ts       # Typescript file for filling the name and the order id.
-│   ├── Login.ts         # Login flow.
-│   ├── Products.ts      # Adding product to cart.
-│   └── Signup.ts        # Contains data for singup and confirmation code.
-└── basic/
-    └── Cart.spec.ts     # Test for adding product to cart.
+│    ├── basic/
+│    │    ├── Cart.spec.ts        # Adding items in the cart.
+│    ├── pages/                  # Page Object Model files
+│    │    ├── Cart.ts             # Asserting a product and getting the subtotal of a product.
+│    │    ├── Checkout.ts         # Contains data for Contact info, Shippment address and Payment info.
+│    │    ├── Contact.ts          # Contains data for filling an Order Id and Email.
+│    │    ├── Login.ts            # Contains data for Login.
+│    │    ├── Product.ts          # Adding to cart a specific product having a specific price. 
+│    │    └── SignUp.ts           # Contains data for Signing Up and grabbing confirmation code from MailSlurp for creating an account. 
+│    ├── requests/
+│    │    ├── 1ApiIntercept.spec.ts      # Printing API call and Mock data using API. 
+│    │    └── 2ResourceBlock.spec.ts     # Blocking resources like images from a page.
+     ├── utils/
+│         └── EmailUtils.ts    # Class for handling email operations with MailSlurp API
+│    ├── auth-flow.spec.ts       # Authentification flow using Email.
+│    └── product-flow.spec.ts    # The product flow - adding product to cart, proceed to checkout and place order using POM files from pages/.
+│    
+└── playwrigth/.auth/
+    └── loginData.json     # File ignored, contain sensitive data such as email and password for login flow.
 ```
 
 ## ⚙️ Technologies Used
@@ -44,5 +47,6 @@ valentino-magic-beans-project/
 - **Node.js** – Runtime environment  
 - **npm** – Dependency management  
 
-
+## 🌐 Website used
+https://valentinos-magic-beans.click/
 
