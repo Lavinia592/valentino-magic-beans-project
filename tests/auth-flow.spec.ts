@@ -2,13 +2,16 @@ import { test } from "@playwright/test";
 import { EmailUtils } from "./utils/EmailUtils";
 import * as signUpPage from "./pages/SignUp";
 import * as loginPage from "./pages/Login";
+import { join, resolve } from "path";
+import { writeFileSync, existsSync, mkdirSync } from "fs";
 
 // test("Generate inbox", async () => {
 //   const inbox = await createInbox();
 //   console.log(inbox);
 // });
-
+const testSignUp = process.env.SIGN_UP_FLOW;
 test("Sign up", async ({ page }) => {
+  test.skip(testSignUp !== "true", "Skipping the test");
   const emailUtils = new EmailUtils();
   const inbox = await emailUtils.createInbox();
   console.log(inbox);
@@ -27,4 +30,20 @@ test("Sign up", async ({ page }) => {
 
   //login
   await loginPage.login(page, inbox.emailAddress, signUpPage.signUpData.pass);
+  await loginPage.verifySuccesfulLogin(page);
+
+  //persist the login data
+  const loginData = {
+    email: inbox.emailAddress,
+    pass: signUpPage.signUpData.pass,
+  };
+  const authDir = resolve(__dirname, "../playwright/.auth ");
+  if (!existsSync(authDir)) {
+    mkdirSync(authDir, { recursive: true });
+  }
+
+  writeFileSync(
+    join(authDir, "loginData.json"),
+    JSON.stringify(loginData, null, 2)
+  );
 });
