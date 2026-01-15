@@ -2,7 +2,7 @@
 
 This repository contains an **end-to-end (E2E) testing suite** built with **Playwright** and **TypeScript**.  
 
-The project automates key user flows such as **signup, login, and navigating products, API mock** for the Valentino Magic Beans web application.
+The project automates key user flows such as **signup, login, selecting product, adding product to cart, proceed to checkout, using data to fill checkout forms, API mock data** for the Valentino Magic Beans web application.
 
 It also integrates **MailSlurp** to manage temporary email inboxes for signup verification testing.
 
