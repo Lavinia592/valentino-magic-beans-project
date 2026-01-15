@@ -25,5 +25,3 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
-- name: TestDino Reporter
-  run: npx tdpw upload path/to/json/report/directory --token="trx_production_8db6452acaf10d2bcb763524500e4af0beb9adb7fccd1e4e85876691adc7f64b" --upload-html
