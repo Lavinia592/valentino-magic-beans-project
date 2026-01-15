@@ -31,7 +31,7 @@ valentino-magic-beans-project/
 │    ├── requests/
 │    │    ├── 1ApiIntercept.spec.ts      # Printing API call and Mock data using API. 
 │    │    └── 2ResourceBlock.spec.ts     # Blocking resources like images from a page.
-     ├── utils/
+│    ├── utils/
 │         └── EmailUtils.ts    # Class for handling email operations with MailSlurp API
 │    ├── auth-flow.spec.ts       # Authentification flow using Email.
 │    └── product-flow.spec.ts    # The product flow - adding product to cart, proceed to checkout and place order using POM files from pages/.
