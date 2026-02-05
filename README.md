@@ -1,10 +1,32 @@
-# 🧪 Valentino Magic Beans Project
+# 🧪 Valentino Magic Beans Project Overview
 
-This repository contains an **end-to-end (E2E) testing suite** built with **Playwright** and **TypeScript**.  
+This project focuses on testing the "Valentino Magic Beans" web application using both manual and automated approaches.
 
 The project automates key user flows such as **signup, login, selecting product, adding product to cart, proceed to checkout, using data to fill checkout forms, API mock data** for the Valentino Magic Beans web application.
 
 It also integrates **MailSlurp** to manage temporary email inboxes for signup verification testing.
+
+## ⚙️ Testing scope
+- Functional testing
+- Exploratory testing
+- Regression testing
+- Basic end-to-end automation
+
+## ⚙️ Automated Scenarios
+- Page load and navigation
+- User interaction flows
+- Basic validations
+
+  ## ⚙️ Tools & Technologies
+
+- **Playwright** – Browser automation and testing  
+- **TypeScript** – Type-safe JavaScript  
+- **MailSlurp API** – Temporary email inbox for testing signups  
+- **Node.js** – Runtime environment  
+- **npm** – Dependency management  
+
+## 🌐 Website used
+https://valentinos-magic-beans.click/
 
 $tree
 ```bash
@@ -40,14 +62,4 @@ valentino-magic-beans-project/
     └── loginData.json     # File ignored, contain sensitive data such as email and password for login flow.
 ```
 
-## ⚙️ Technologies Used
-
-- **Playwright** – Browser automation and testing  
-- **TypeScript** – Type-safe JavaScript  
-- **MailSlurp API** – Temporary email inbox for testing signups  
-- **Node.js** – Runtime environment  
-- **npm** – Dependency management  
-
-## 🌐 Website used
-https://valentinos-magic-beans.click/
 
